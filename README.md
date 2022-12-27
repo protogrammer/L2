@@ -99,7 +99,7 @@ router.POST("/api/new", func(c *gin.Context) {
 })
 ```
 
-## Редактирование поста
+## 2. Редактирование поста
 ```go
 router.POST("/api/edit", func(c *gin.Context) {
 		user, ok := updateCookie(c)
@@ -140,7 +140,7 @@ router.POST("/api/edit", func(c *gin.Context) {
 })
 ```
 
-## Удаление поста
+## 3. Удаление поста
 ```go
 router.POST("/api/delete", func(c *gin.Context) {
 		user, ok := updateCookie(c)
@@ -170,7 +170,7 @@ router.POST("/api/delete", func(c *gin.Context) {
 })
 ```
 
-## Получить все посты
+## 4. Получить все посты
 ```go
 router.GET("/api/get", func(c *gin.Context) {
 		user, ok := updateCookie(c)
@@ -224,7 +224,7 @@ router.GET("/api/get", func(c *gin.Context) {
 })
 ```
 
-## Получить свой юзернейм
+## 5. Получить свой юзернейм
 ```go
 router.GET("/api/me", func(c *gin.Context) {
 		user, ok := updateCookie(c)
@@ -243,7 +243,7 @@ router.GET("/api/me", func(c *gin.Context) {
 })
 ```
 
-## Поставить/снять лайк
+## 6. Поставить/снять лайк
 ```go
 router.POST("/api/like", func(c *gin.Context) {
 		user, ok := updateCookie(c)
@@ -280,7 +280,7 @@ router.POST("/api/like", func(c *gin.Context) {
 })
 ```
 
-## Создание нового пользователя
+## 7. Создание нового пользователя
 ```go
 func updateCookie(c *gin.Context) (user *db.User, ok bool) {
  	ok = true
